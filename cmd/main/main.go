@@ -22,4 +22,5 @@ func main() {
 	defer logger.Close()
 	conf := apiserver.NewConfig(*configPath)
 	serv := apiserver.New(conf)
+	serv.Start()
 }
